@@ -105,4 +105,10 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 480px) {
+  .todo-item__remove {
+    opacity: 1;
+  }
+}
 </style>
