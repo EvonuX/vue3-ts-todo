@@ -26,7 +26,12 @@ function addTodo() {
     text: todoText
   };
 
-  todos.value.unshift(data);
+  if (!todos.value.length) {
+    todos.value.push(data);
+  } else {
+    todos.value.unshift(data);
+  }
+
   newTodo.value = "";
 
   updateStorage();
