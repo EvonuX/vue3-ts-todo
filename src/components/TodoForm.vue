@@ -7,7 +7,7 @@
       v-model="newTodo"
       autocomplete="off"
       required
-      maxlength="30"
+      maxlength="25"
       aria-label="Create a new todo"
       placeholder="Create a new todo..."
     />
