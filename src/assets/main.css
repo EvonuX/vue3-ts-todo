@@ -1,0 +1,88 @@
+:root {
+  --primary: hsl(220, 98%, 61%);
+  --check-bg: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  --box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+.light {
+  --color: hsl(235, 19%, 35%);
+  --bg: hsl(0, 0%, 98%);
+  --todo-bg: #fff;
+  --todo-complete: hsl(233, 11%, 84%);
+
+  --img: url("../assets/images/bg-desktop-light.jpg");
+}
+
+.dark {
+  --color: hsl(234, 39%, 85%);
+  --bg: hsl(235, 21%, 11%);
+  --todo-bg: hsl(235, 24%, 19%);
+  --todo-complete: hsl(234, 11%, 52%);
+
+  --img: url("../assets/images/bg-desktop-dark.jpg");
+}
+
+@media screen and (max-width: 480px) {
+  .light {
+    --img: url("../assets/images/bg-mobile-light.jpg");
+  }
+
+  .dark {
+    --img: url("../assets/images/bg-mobile-dark.jpg");
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--color);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+button,
+input {
+  background: none;
+  border: none;
+  border-radius: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+.box-shadow {
+  box-shadow: var(--box-shadow);
+  border-radius: 1rem;
+}
+
+.hide--desktop {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .hide--desktop {
+    display: block;
+  }
+
+  .hide--mobile {
+    display: none;
+  }
+}
