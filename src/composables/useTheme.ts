@@ -1,4 +1,4 @@
-const { ref } = require("vue");
+import { ref } from "vue";
 
 const isLightTheme = ref(true);
 
