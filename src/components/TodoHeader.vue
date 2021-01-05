@@ -3,7 +3,7 @@
     <div class="header__main">
       <h1>TODO</h1>
 
-      <button @click="toggleTheme">
+      <button title="change theme" @click="toggleTheme">
         <Moon v-if="isLightTheme" />
         <Sun v-else />
       </button>
