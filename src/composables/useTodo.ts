@@ -7,7 +7,9 @@ interface Todo {
   complete: boolean;
 }
 
-const initialState = JSON.parse(localStorage.getItem("todos") || "{}") || [];
+const initialState = localStorage.getItem("todos")
+  ? JSON.parse(localStorage.getItem("todos") || "[]")
+  : [];
 
 const todos = ref(initialState);
 const filteredTodos = ref([]);
