@@ -26,11 +26,7 @@ function addTodo() {
     text: todoText
   };
 
-  if (!todos.value.length) {
-    todos.value.push(data);
-  } else {
-    todos.value.unshift(data);
-  }
+  todos.value.push(data);
 
   newTodo.value = "";
 
