@@ -1,6 +1,6 @@
 const { ref } = require("vue");
 
-let isLightTheme = ref(true);
+const isLightTheme = ref(true);
 
 function toggleTheme() {
   isLightTheme.value = !isLightTheme.value;
